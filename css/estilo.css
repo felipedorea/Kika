@@ -285,6 +285,97 @@ section{
     border: 2px solid #16425b;
 }
 
+/* Inicio Produtos */
+
+.produtos{
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .produtos .banner{
+    margin-bottom: 30px;
+  }
+
+  .produtos .banner .banner-img{
+    width: 100%;
+    height: 300px;
+    filter: brightness(.5);
+  }
+
+  .produtos .banner .img-overlay{
+    position: absolute;
+    top: 23%;
+    left: 42%;
+    text-align: center;
+  }
+
+  .produtos .banner .img-overlay .titulo-banner{
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .produtos .banner .img-overlay .indicador-pagina,
+  .produtos .banner .img-overlay .indicador-pagina a,
+  .produtos .banner .img-overlay .indicador-pagina span{
+    color: #fff;
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  .produtos .banner .img-overlay .indicador-pagina{
+    color: var(--rosa);
+} 
+
+.produtos .banner .img-overlay .indicador-pagina a:hover{
+    text-decoration: underline;
+}
+
+
+  .produtos .tag{
+    padding: 5px 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+
+  .produtos .tag:hover{
+    background-color: transparent;
+    border: 1px solid #000;
+  }
+
+  input{
+    display: none;
+  }
+
+  .galeria-produtos-imagens{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color: var(--cinza);
+  }
+
+  .galeria-produtos-imagens img{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+    transition: all .4s ease-in-out;
+    border: 10px solid #fff;
+    border-radius: 15px;
+  }
+
+  #vestidos:checked ~ .galeria-produtos-imagens > img:not([class *="vestidos"]),
+  #intima:checked ~ .galeria-produtos-imagens > img:not([class *="intima"]),
+  #calcados:checked ~ .galeria-produtos-imagens > img:not([class *="calcados"]){
+    width: 0px;
+    height: 0px;
+  }
+
 footer{
     font-size: 15px;
     background-color: var(--rosa);

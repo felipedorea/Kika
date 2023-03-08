@@ -7,61 +7,7 @@
     <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Kika Modas :: Produtos</title>
-    <style>
-      .produtos{
-        padding-top: 80px;
-        text-align: center;
-      }
-
-      h1{
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      .produtos .tag{
-        padding: 5px 10px;
-        background-color: lightgray;
-        cursor: pointer;
-        margin-right: 20px;
-        border-radius: 10px;
-        border: 1px solid transparent;
-      }
-
-      .produtos .tag:hover{
-        background-color: transparent;
-        border: 1px solid #000;
-      }
-
-      input{
-        display: none;
-      }
-
-      .galeria-produtos-imagens{
-        display: flex;
-        width: 100%;
-        padding: 10px;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-      }
-
-      .galeria-produtos-imagens img{
-        height: 300px;
-        width: 300px;
-        margin-bottom: 10px;
-        transition: all .4s ease-in-out;
-      }
-
-      #vestidos:checked ~ .galeria-produtos-imagens > img:not([class *="vestidos"]),
-      #intima:checked ~ .galeria-produtos-imagens > img:not([class *="intima"]),
-      #calcados:checked ~ .galeria-produtos-imagens > img:not([class *="calcados"]){
-        width: 0px;
-        height: 0px;
-      }
-
-    </style>
+    <title>Kika Modas :: Galeria</title>
 </head>
 
 <body>
@@ -101,7 +47,13 @@
 
     <section class="produtos">
 
-      <h1>Todos os Produtos</h1>
+      <div class="banner">
+        <img class="banner-img" src="imagens/img-carousel-2.jpg" alt="banner-imagem">
+        <div class="img-overlay">
+          <h1 class="titulo-banner">Galeria</h1>
+          <p class="indicador-pagina" ><a href="index.html">Home</a> <span>/</span> Galeria </p>
+        </div>
+      </div>
 
 
       <input type="radio" name="botao-filtro" id="todos">
