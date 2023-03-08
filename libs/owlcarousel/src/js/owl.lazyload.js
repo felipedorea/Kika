@@ -81,7 +81,7 @@
 	 * @public
 	 */
 	Lazy.Defaults = {
-		lazyLoad: false,
+		lazyLoad: true,
 		lazyLoadEager: 0
 	};
 
