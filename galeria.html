@@ -25,10 +25,10 @@
 
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a class="active" href="#">Galeria</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
 
@@ -46,49 +46,47 @@
 
     </header> <!-- FIM Header -->
 
-    <section class="produtos">
+    <section class="section-padrao">
 
       <div class="banner">
         <img class="banner-img" src="imagens/img-carousel-2.jpg" alt="banner-imagem">
-        <div class="img-overlay">
+        <div class="img-overlay" id="overlay-galeria">
           <h1 class="titulo-banner">Galeria</h1>
           <p class="indicador-pagina" ><a href="index.html">Home</a> <span>/</span> Galeria </p>
         </div>
       </div>
 
 
-      <input type="radio" name="botao-filtro" id="todos">
-      <input type="radio" name="botao-filtro" id="vestidos">
-      <input type="radio" name="botao-filtro" id="intima">
-      <input type="radio" name="botao-filtro" id="calcados">
-
-        <label for="todos" class="tag all">Todas as fotos</label>
-        <label for="vestidos" class="tag vestidos">Vestidos</label>
-        <label for="intima" class="tag intima">Roupa Intima</label>
-        <label for="calcados" class="tag calcados">Calçados</label>
-
-
-        <div class="galeria-produtos-imagens">
-          <a href="#img-10"><img src="imagens/vestido.png" alt="img-1" class="vestidos"></a>
-          <a href="#img-11"><img src="imagens/img-carousel-2.jpg" alt="img-1" class="vestidos"></a>
-          <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
-          <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="calcados"></a>
-          <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
-          <a href=""><img src="imagens/img-carousel-3.jpg" alt="img-1" class="intima"></a>
-          <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="intima"></a>
-          <a href=""><img src="imagens/img-carousel-4.jpg" alt="img-1" class="intima"></a>
-          <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="intima"></a>
-        </div>
-
-        <div class="lightbox" id="img-10">
-            <img src="imagens/vestido.png">
-            <a class="setas" href="#img-11">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </a>
-            <a class="fechar" href="#">
-                <ion-icon name="close-outline"></ion-icon>
-            </a>
-        </div>
+      <article class="galeria">
+          <input type="radio" name="botao-filtro" id="todos">
+          <input type="radio" name="botao-filtro" id="vestidos">
+          <input type="radio" name="botao-filtro" id="intima">
+          <input type="radio" name="botao-filtro" id="calcados">
+            <label for="todos" class="tag all">Todas as fotos</label>
+            <label for="vestidos" class="tag vestidos">Vestidos</label>
+            <label for="intima" class="tag intima">Roupa Intima</label>
+            <label for="calcados" class="tag calcados">Calçados</label>
+            <div class="galeria-produtos-imagens">
+              <a href="#img-10"><img src="imagens/vestido.png" alt="img-1" class="vestidos"></a>
+              <a href="#img-11"><img src="imagens/img-carousel-2.jpg" alt="img-1" class="vestidos"></a>
+              <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
+              <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="calcados"></a>
+              <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
+              <a href=""><img src="imagens/img-carousel-3.jpg" alt="img-1" class="intima"></a>
+              <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="intima"></a>
+              <a href=""><img src="imagens/img-carousel-4.jpg" alt="img-1" class="intima"></a>
+              <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="intima"></a>
+            </div>
+            <div class="lightbox" id="img-10">
+                <img src="imagens/vestido.png">
+                <a class="setas" href="#img-11">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+                <a class="fechar" href="#">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </div>
+      </article>
 
         <div class="lightbox" id="img-11">
             <a class="setas" href="#img-10">

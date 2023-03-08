@@ -8,52 +8,6 @@
     <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Kika Modas :: FAQ</title>
-    <style>
-
-    .faq .menu-accordion{
-      text-align: left;
-      width: 50%;
-      margin: 50px 50px;
-      background-color: lightgray;
-      padding: 15px;
-      border-radius: 15px;
-    }
-
-    .faq .menu-accordion li{
-      margin-bottom: 15px;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 15px;
-    }
-
-    .faq .menu-accordion .conteudo{
-      max-height: 0;
-      overflow: hidden;
-      transition: all .4s linear;
-      text-indent: 15px;
-      text-align: justify;
-    }
-
-    .faq .menu-accordion label{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      font-size: 20px;
-      color: red;
-      margin-bottom: 15px;
-    }
-
-    .faq .menu-accordion li label span ion-icon{
-      font-size: 30px;
-      cursor: pointer;
-    }
-
-    .faq .menu-accordion input[type="radio"]:checked ~ .conteudo{
-      max-height: 300px;
-    }
-
-    </style>
 </head>
 
 <body>
@@ -71,7 +25,7 @@
 
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a class="active" href="#">FAQ</a></li>
@@ -92,11 +46,11 @@
 
     </header> <!-- FIM Header -->
 
-    <section class="produtos">
+    <section class="section-padrao">
 
       <div class="banner">
         <img class="banner-img" src="imagens/img-carousel-2.jpg" alt="banner-imagem">
-        <div class="img-overlay">
+        <div class="img-overlay" id="overlay-faq">
           <h1 class="titulo-banner">FAQ</h1>
           <p class="indicador-pagina" ><a href="index.html">Home</a> <span>/</span> Faq </p>
         </div>
@@ -117,7 +71,7 @@
                   </div>
               </li>
               <li>
-                  <label for="second">Trocas e Devoluções <span><ion-icon name="arrow-down-circle-outline"></ion-icon></span></label>
+                  <label for="second">Trocas<span><ion-icon name="arrow-down-circle-outline"></ion-icon></span></label>
                   <input type="radio" name="accordion" id="second">
                   <div class="conteudo">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -128,7 +82,7 @@
                   </div>
               </li>
               <li>
-                  <label for="third">Trocas e Devoluções<span><ion-icon name="arrow-down-circle-outline"></ion-icon></span></label>
+                  <label for="third">Pagamentos<span><ion-icon name="arrow-down-circle-outline"></ion-icon></span></label>
                   <input type="radio" name="accordion" id="third">
                   <div class="conteudo">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -140,6 +94,26 @@
               </li>
             </ul>
       </article>
+
+      <article class="privacidade">
+        <h1>Políticas de Privacidade</h1>
+        <ul class="lista-polit">
+            <li class="titulo-polit"> Titulo do Item
+            </li>
+            <ul class="sublista">
+              <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio soluta ab molestiae fugit eligendi eveniet corrupti itaque modi quis consequatur sint totam odit tenetur nobis enim, quasi maxime excepturi!
+              </li>
+            </ul>
+            <li class="titulo-polit"> Titulo do Item
+            </li>
+            <ul class="sublista">
+              <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio soluta ab molestiae fugit eligendi eveniet corrupti itaque modi quis consequatur sint totam odit tenetur nobis enim, quasi maxime excepturi!
+              </li>
+            </ul>
+        </ul>
+  </article>
 
     </section>
 
