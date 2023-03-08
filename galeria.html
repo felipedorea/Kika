@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Kika Modas :: Galeria</title>
+</head>
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h1>Kika Modas</h1>
+        </div>
+
+        <div class="menu">
+            <label for="check"><ion-icon id="check-btn" name="apps-outline"></ion-icon></label>
+            <input type="checkbox" id="check">
+
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a class="active" href="#">Galeria</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <a class="redes" href="">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a class="redes" href="">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a class="redes" href="">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </div>
+
+    </header> <!-- FIM Header -->
+
+    <section class="produtos">
+
+      <div class="banner">
+        <img class="banner-img" src="imagens/img-carousel-2.jpg" alt="banner-imagem">
+        <div class="img-overlay">
+          <h1 class="titulo-banner">Galeria</h1>
+          <p class="indicador-pagina" ><a href="index.html">Home</a> <span>/</span> Galeria </p>
+        </div>
+      </div>
+
+
+      <input type="radio" name="botao-filtro" id="todos">
+      <input type="radio" name="botao-filtro" id="vestidos">
+      <input type="radio" name="botao-filtro" id="intima">
+      <input type="radio" name="botao-filtro" id="calcados">
+
+        <label for="todos" class="tag all">Todas as fotos</label>
+        <label for="vestidos" class="tag vestidos">Vestidos</label>
+        <label for="intima" class="tag intima">Roupa Intima</label>
+        <label for="calcados" class="tag calcados">Calçados</label>
+
+
+        <div class="galeria-produtos-imagens">
+          <a href="#img-10"><img src="imagens/vestido.png" alt="img-1" class="vestidos"></a>
+          <a href="#img-11"><img src="imagens/img-carousel-2.jpg" alt="img-1" class="vestidos"></a>
+          <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
+          <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="calcados"></a>
+          <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
+          <a href=""><img src="imagens/img-carousel-3.jpg" alt="img-1" class="intima"></a>
+          <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="intima"></a>
+          <a href=""><img src="imagens/img-carousel-4.jpg" alt="img-1" class="intima"></a>
+          <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="intima"></a>
+        </div>
+
+        <div class="lightbox" id="img-10">
+            <img src="imagens/vestido.png">
+            <a class="setas" href="#img-11">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a class="fechar" href="#">
+                <ion-icon name="close-outline"></ion-icon>
+            </a>
+        </div>
+
+        <div class="lightbox" id="img-11">
+            <a class="setas" href="#img-10">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+            <img src="imagens/img-carousel-2.jpg">
+            <a class="setas" href="#img-12">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+            <a class="fechar" href="#">
+                <ion-icon name="close-outline"></ion-icon>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site Desenvolvido por <span>Felipe Dórea</span> para Kika Modas</p>
+        <p class="copy">&copy; Todos os direitos reservados, 2023</p>
+    </footer>
+
+    <script src="libs/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="libs/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
