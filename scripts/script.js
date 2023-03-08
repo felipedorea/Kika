@@ -5,6 +5,7 @@ $(document).ready(function(){
       autoplayTimeout: 6000,
       autoplaySpeed: 1500,
       loop: true,
-      dots: false
+      dots: false,
+      LazyLoad: false
     });
   });
