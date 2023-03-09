@@ -387,17 +387,17 @@ section{
     display: flex;
     width: 100%;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
     background-color: var(--cinza);
+    gap: 20px;
   }
 
   .galeria-produtos-imagens a img{
     height: 300px;
     width: 300px;
-    margin-bottom: 30px;
     border: 10px solid #fff;
     border-radius: 15px;
     transition: all .2s linear;
