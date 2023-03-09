@@ -57,7 +57,7 @@
       </div>
 
 
-      <article class="galeria">
+      <article class="galeria" id="voltar-galeria">
           <input type="radio" name="botao-filtro" id="todos">
           <input type="radio" name="botao-filtro" id="vestidos">
           <input type="radio" name="botao-filtro" id="intima">
@@ -67,22 +67,37 @@
             <label for="intima" class="tag intima">Roupa Intima</label>
             <label for="calcados" class="tag calcados">Calçados</label>
             <div class="galeria-produtos-imagens">
-              <a href="#img-10"><img src="imagens/vestido.png" alt="img-1" class="vestidos"></a>
-              <a href="#img-11"><img src="imagens/img-carousel-2.jpg" alt="img-1" class="vestidos"></a>
-              <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
-              <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="calcados"></a>
-              <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="calcados"></a>
-              <a href=""><img src="imagens/img-carousel-3.jpg" alt="img-1" class="intima"></a>
-              <a href=""><img src="imagens/img-carousel-1.jpg" alt="img-1" class="intima"></a>
-              <a href=""><img src="imagens/img-carousel-4.jpg" alt="img-1" class="intima"></a>
-              <a href=""><img src="imagens/img-carousel-2.jpg" alt="img-1" class="intima"></a>
+              <a href="#img-10" class="vestidos"><img src="imagens/vestido.png" alt="img-1"></a>
+
+              <a href="#img-11" class="vestidos"><img src="imagens/img-carousel-2.jpg" alt="img-1" ></a>
+
+              <a href="" class="calcados"><img src="imagens/img-carousel-2.jpg" alt="img-1" ></a>
+
+              <a href="" class="calcados"><img src="imagens/img-carousel-1.jpg" alt="img-1" ></a>
+
+              <a href="" class="calcados"><img src="imagens/img-carousel-2.jpg" alt="img-1" ></a>
+
+              <a href="" class="intima"><img src="imagens/img-carousel-3.jpg" alt="img-1" ></a>
+
+              <a href="" class="intima"><img src="imagens/img-carousel-1.jpg" alt="img-1" ></a>
+
+              <a href="" class="intima"><img src="imagens/img-carousel-4.jpg" alt="img-1" ></a>
+
+              <a href="" class="intima"><img src="imagens/img-carousel-2.jpg" alt="img-1" ></a>
+
             </div>
             <div class="lightbox" id="img-10">
-                <img src="imagens/vestido.png">
+                <div class="imagem-lightbox">
+                    <img src="imagens/vestido.png">
+                    <div class="info-lightbox">
+                        <a class="comprar-btn" href="">Compre Pelo <ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a class="comprar-btn" href="">Saiba Mais</a>
+                    </div>
+                </div>
                 <a class="setas" href="#img-11">
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </a>
-                <a class="fechar" href="#">
+                <a class="fechar" href="#voltar-galeria">
                     <ion-icon name="close-outline"></ion-icon>
                 </a>
             </div>

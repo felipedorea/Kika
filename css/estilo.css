@@ -190,7 +190,8 @@ section{
     color: #fff;
 }
 
-.home .categorias{
+.home .categorias,
+.section-padrao .produtos-page{
     width: 100%;
 }
 
@@ -395,11 +396,30 @@ section{
     gap: 20px;
   }
 
-  .galeria-produtos-imagens a img{
+  .galeria-produtos-imagens a{
     height: 300px;
     width: 300px;
     border: 10px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
     border-radius: 15px;
+    transition: all .2s linear;
+  }
+
+  .galeria-produtos-imagens a:hover{
+    filter: grayscale(.5);
+  }
+
+  .galeria-produtos-imagens a p{
+    position: relative;
+    z-index: 2;
+  }
+
+  .galeria-produtos-imagens a img{
+    height: 100%;
+    width: 100%;
     transition: all .2s linear;
   }
 
@@ -407,9 +427,9 @@ section{
     transform: scale(1.1);
   }
 
-  #vestidos:checked ~ .galeria-produtos-imagens > a > img:not([class *="vestidos"]),
-  #intima:checked ~ .galeria-produtos-imagens > a > img:not([class *="intima"]),
-  #calcados:checked ~ .galeria-produtos-imagens > a > img:not([class *="calcados"]){
+  #vestidos:checked ~ .galeria-produtos-imagens > a:not([class *="vestidos"]),
+  #intima:checked ~ .galeria-produtos-imagens > a:not([class *="intima"]),
+  #calcados:checked ~ .galeria-produtos-imagens > a:not([class *="calcados"]){
     width: 0vw;
     height: 0vh;
     position: absolute;
@@ -433,11 +453,41 @@ section{
     z-index: 1000;
   }
 
-  .lightbox img{
+  .lightbox .info-lightbox{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  .lightbox .imagem-lightbox{
     width: 600px;
     height: 600px;
-    object-fit: contain;
     border: 10px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .lightbox .imagem-lightbox img{
+    width: 80%;
+    height: 80%;
+  }
+
+  .lightbox .imagem-lightbox .comprar-btn{
+    width: 150px;
+    padding: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    transition: all .2s linear;
+  }
+
+  .lightbox .imagem-lightbox .comprar-btn:hover{
+    background-color: rgba(245, 245, 245, 0.171);
   }
 
   .lightbox .fechar{
@@ -458,6 +508,7 @@ section{
     color: #696969;
     font-size: 50px;
   }
+
 
   /* Inicio FAQ */ 
 
