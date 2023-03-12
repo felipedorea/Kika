@@ -60,15 +60,26 @@ section{
     padding: 0px 15px;
 }
 
-.navbar .redes{
+.navbar .redes ion-icon{
     font-size: 20px;
-    padding: 0 3px;
+    padding: 3px 5px;
     color: #000;
     margin-left: 20px;
+    border-radius: 5px;
+    transition: all linear .2s;
+} 
+
+.navbar #whatsapp-navbar:hover{
+    background-color: #25d366;
 }
 
-.navbar .redes:hover{
-    color: #cca6ac;
+.navbar #instagram-navbar:hover{
+  background-image: linear-gradient(45deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); 
+  background-repeat: no-repeat;
+}
+
+.navbar #facebook-navbar:hover{
+  background-color: #4267B2;
 }
 
 .navbar .logo h1{
@@ -212,11 +223,11 @@ section{
 
 .home .categorias .categorias-imagens{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px;
-  grid-auto-rows: 300px;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+  grid-auto-rows: 250px;
   padding: 15px;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -235,10 +246,12 @@ section{
   transition: all ease-out .3s;
   position: relative;
   cursor: pointer;
+  filter: saturate(70%);
 }
 
 .home .categorias .categorias-imagens .imagens .cat-img:hover{
   transform: scale(1.2);
+  filter: saturate(100%);
 }
 
 .t-imgs{
@@ -257,6 +270,18 @@ section{
 
 .l-2{
   grid-row: span 2;
+}
+
+.col-1{
+  grid-column: span 1;
+}
+
+.col-2{
+  grid-column: span 2;
+}
+
+.col-3{
+  grid-column: span 3;
 }
 
 
@@ -412,14 +437,21 @@ section{
     text-decoration: underline;
 }
 
+  /* Inicio Galeria */
+
+  .section-padrao .galeria{
+    text-align: center;
+  }
 
   .section-padrao .galeria .tag{
     padding: 5px 10px;
     background-color: lightgray;
     cursor: pointer;
     margin-right: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid transparent;
+    display: inline-block;
   }
 
   .section-padrao .galeria .tag:hover{
@@ -427,7 +459,6 @@ section{
     border: 1px solid #000;
   }
 
-  /* Inicio Galeria */
 
   input{
     display: none;
