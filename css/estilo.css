@@ -224,7 +224,7 @@ section{
 .home .categorias .categorias-imagens{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 5px;
+  gap: 15px;
   grid-auto-rows: 250px;
   padding: 15px;
   max-width: 1000px;
@@ -234,7 +234,6 @@ section{
 .home .categorias .categorias-imagens .imagens{
   position: relative;
   overflow: hidden;
-  border: 5px solid var(--rosa);
   border-radius: 15px;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.336);
 }
