@@ -283,7 +283,24 @@ section{
   grid-column: span 3;
 }
 
+.categorias .galeria-link{
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background-color: transparent;
+  transition: all .2s ease-out;
+}
 
+.categorias .galeria-link:hover{
+  background-color: rgba(0, 0, 0, 0.199);
+}
+
+/*
 .home .categorias .produtos-destaque{
     display: flex;
     align-items: center;
@@ -390,6 +407,8 @@ section{
     color: #16425b;
     border: 2px solid #16425b;
 }
+
+*/
 
 /* Inicio Base */
 
